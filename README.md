@@ -88,41 +88,6 @@ APP本身有自動切換直播源，你也可以手動切換直播源。<br>
 
 * 遇到問題可以先考慮重啟/恢復默認/清除數據/重新安裝等方式自助解決
 
-目前支持的配置格式：
-
-* txt
-    ```
-    組名,#genre#
-    標題,視頻地址
-    ```
-* m3u
-    ```
-    #EXTM3U x-tvg-url=""
-    #EXTINF:-1 tvg-id="" tvg-chno="" tvg-name="標準標題" tvg-logo="图标" group-title="組名",標題
-    #EXTVLCOPT:http-user-agent=
-    #EXTVLCOPT:http-referrer=
-    視頻地址
-    ```
-* json
-    ```json
-    [
-      {
-        "group": "組名",
-        "name": "標準標題",
-        "title": "標題",
-        "logo": "图标",
-        "number": "頻道號",
-        "uris": [
-          "視頻地址"
-        ],
-        "headers": {
-          "user-agent": ""
-        }
-      }
-    ]
-    ```
-
-
 下載安裝 [releases](https://github.com/horsemailma/yourtvapp)
 
 注意，“*-kitkat”為安卓4.4兼容版本
